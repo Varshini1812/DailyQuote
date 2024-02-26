@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
 import '../styles/DailyQuote.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faShare, faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 
 
 

@@ -25,12 +25,6 @@
     
   }
 
-  /* .quotebuttons{
-    display: flex;
-    align-self: start;
-    margin-left: 60px;
-    margin-top: 20px;
-  } */
   .quote-container .quotearea{
     display: flex;
     justify-content: center;
