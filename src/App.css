@@ -12,9 +12,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-image: url(../src/images/back6.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: inherit;
   }
 
 .App {
@@ -195,5 +196,14 @@
     bottom: 20px; 
     font-size: 14px; 
     padding: 8px 16px; 
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fav
+  {
+    padding: 0px 7.9px;
   }
 }
