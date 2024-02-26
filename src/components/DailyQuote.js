@@ -20,11 +20,15 @@ function DailyQuote({ quote, author, onNewQuote, onSave }) {
   const handleSave = () => {
     onSave();
   };
-const handleSound=()=>{
-  let utterance=new SpeechSynthesisUtterance(`${quote}`);
-  speechSynthesis.speak(utterance);
-
-}
+  const handleSound = () => {
+    let utterance = new SpeechSynthesisUtterance(`${quote}`);
+    
+    // Set the rate to a slower value, for example, 0.8
+    utterance.rate = 0.5;
+  
+    speechSynthesis.speak(utterance);
+  }
+  
 
 
 const handleShareWp = () => {

@@ -15,7 +15,7 @@ function Favorites({ favoriteQuotes, onRemove }) {
 
   return (
     <div className="Favorites"> 
-      <h1>Favorites</h1>
+      <h1>Favourites</h1>
       {favoriteQuotes.length === 0 ? (
         <p className="nofav">No favorite quotes added yet.</p>
       ) : (

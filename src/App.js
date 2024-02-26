@@ -69,7 +69,7 @@ function App() {
               <Link to="/">Daily Quote</Link>
             </li>
             <li className='fav'>
-              <Link to="/favorites">Favorites</Link>
+              <Link to="/favorites">Favourites</Link>
             </li>
           </ul>
         </nav>
