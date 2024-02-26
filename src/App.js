@@ -63,12 +63,12 @@ function App() {
           <Route path="/" element={<DailyQuote quote={quote} author={author} onNewQuote={handleNewQuote} onShare={handleShare} onSave={handleSave} />} />
           <Route path="/favorites" element={<Favorites favoriteQuotes={favoriteQuotes} onRemove={handleRemove} />} />
         </Routes>
-        <nav>
+        <nav className='nav'>
           <ul className="nav-links">
             <li>
               <Link to="/">Daily Quote</Link>
             </li>
-            <li>
+            <li className='fav'>
               <Link to="/favorites">Favorites</Link>
             </li>
           </ul>
