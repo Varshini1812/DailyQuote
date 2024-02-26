@@ -8,6 +8,7 @@ import { faHeart, faShare, faVolumeHigh } from '@fortawesome/free-solid-svg-icon
 
 
 function DailyQuote({ quote, author, onNewQuote, onSave }) {
+  
   // Add prop-type validation
   DailyQuote.propTypes = {
     quote: PropTypes.string.isRequired,

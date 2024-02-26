@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes
+import PropTypes from 'prop-types';
 import '../styles/Favourite.css'; 
 
 function Favorites({ favoriteQuotes, onRemove }) {
-  // Add prop-type validation
   Favorites.propTypes = {
     favoriteQuotes: PropTypes.arrayOf(
       PropTypes.shape({
@@ -17,15 +16,19 @@ function Favorites({ favoriteQuotes, onRemove }) {
   return (
     <div className="Favorites"> 
       <h1>Favorites</h1>
-      <ul>
-        {favoriteQuotes.map((fav) => (
-          <li key={fav.quote}>
-            <div className="quote">{fav.quote}</div>
-            <div className="author">- {fav.author}</div>
-            <button onClick={() => onRemove(fav)}>Remove</button>
-          </li>
-        ))}
-      </ul>
+      {favoriteQuotes.length === 0 ? (
+        <p className="nofav">No favorite quotes added yet.</p>
+      ) : (
+        <ul>
+          {favoriteQuotes.map((fav) => (
+            <li key={fav.quote}>
+              <div className="quote">{fav.quote}</div>
+              <div className="author">- {fav.author}</div>
+              <button onClick={() => onRemove(fav)}>Remove</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

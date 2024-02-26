@@ -16,7 +16,7 @@
   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
   linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   }
-  
+
 .App {
   max-width: 800px;
   margin: 0 auto;
@@ -125,4 +125,74 @@
 
 .remove-btn:hover {
   color: #a50d0d;
+}
+
+
+
+.notification {
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f74933;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  z-index: 999; 
+}
+
+.notification.hide {
+  display: none;
+}
+
+
+
+/* Add media query for screens smaller than 768px (typical tablet portrait) */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Display navigation links in a column */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .nav-links li {
+    margin-bottom: 10px; /* Add space between navigation links */
+  }
+
+  .content {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .quote-container {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .button-container {
+    margin-top: 15px; /* Adjust margin */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Reduce button font size */
+  }
+
+  .favorite-item {
+    padding: 8px; /* Adjust padding */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  .favorite-text {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .notification {
+    bottom: 20px; /* Adjust notification position */
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
 }

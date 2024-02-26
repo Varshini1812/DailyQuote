@@ -114,3 +114,88 @@
     font-size: 18px;
 
   }
+
+
+  /* App.css */
+
+/* Existing CSS */
+
+/* Add media query for screens smaller than 768px (typical tablet portrait) */
+@media screen and (max-width: 768px) {
+  .daily-quote-container {
+    width: 90%; /* Adjust container width */
+    padding: 20px; /* Adjust padding */
+    margin: 0 auto; /* Center align */
+  }
+
+  h1.title {
+    font-size: 32px; /* Reduce font size */
+  }
+
+  .daily-quote-container .quote-container {
+    height: auto; /* Allow container height to adjust */
+    margin: 20px 0; /* Adjust margin */
+  }
+
+  .quotearea .quote {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .quote-container .author {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  .button-container {
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .features .new-quote-btn {
+    margin-left: 0; /* Remove margin */
+    margin-top: 20px; /* Add margin at the top */
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .features ul {
+    margin-left: 0; /* Remove margin */
+    margin-top: 20px; /* Add margin at the top */
+  }
+
+  .features ul button {
+    margin: 5px; /* Adjust margin */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    font-size: 16px; /* Reduce font size */
+  }
+}
+
+/* Add media query for screens smaller than 480px (typical smartphone) */
+@media screen and (max-width: 480px) {
+  h1.title {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  .quotearea .quote {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .daily-quote-container .author {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .button-container .features {
+    flex-direction: column; /* Display buttons in a column */
+    align-items: center; /* Center align buttons */
+  }
+
+  .features .new-quote-btn {
+    margin-top: 20px; /* Add margin at the top */
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .features ul button {
+    margin: 5px; /* Adjust margin */
+    width: 35px; /* Further reduce button width */
+    height: 35px; /* Further reduce button height */
+    font-size: 14px; /* Further reduce font size */
+  }
+}

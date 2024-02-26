@@ -11,6 +11,15 @@
     color: #333;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 15px;
+    
+  }
+  .nofav {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
   }
   
   .Favorites ul {
@@ -60,3 +69,30 @@
     background-color: #d32f2f;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .Favorites {
+      max-width: 90%; /* Adjust container width */
+    }
+  
+    .Favorites h1 {
+      font-size: 24px; /* Reduce font size */
+    }
+  
+    .Favorites li p {
+      font-size: 16px; /* Reduce font size */
+    }
+  
+    .Favorites li .quote {
+      margin-bottom: 10px; /* Adjust margin */
+    }
+  
+    .Favorites li .author {
+      margin-bottom: 10px; /* Adjust margin */
+    }
+  
+    .Favorites li button {
+      padding: 5px 8px; /* Adjust padding */
+      font-size: 14px; /* Reduce font size */
+    }
+  }
