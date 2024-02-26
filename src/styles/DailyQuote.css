@@ -1,71 +1,116 @@
 /* App.css */
 
 .daily-quote-container {
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+    width: 750px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
   
   }
   
   h1.title {
     font-size: 44px;
     margin-bottom: 20px;
-    font-family:cursive;
+    text-align: center;
     
   }
   
-  .quote-container {
+  .daily-quote-container .quote-container {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 250px;
+    height: 200px;
+    margin: 35px 0;
     
   }
 
-  .quotebuttons{
+  /* .quotebuttons{
     display: flex;
     align-self: start;
     margin-left: 60px;
     margin-top: 20px;
+  } */
+  .quote-container .quotearea{
+    display: flex;
+    justify-content: center;
   }
-  
-  .quote {
-    font-size: 28px;
-    font-style: italic;
-  }
-  
-  .author {
-    margin-top: 10px;
+  .quotearea .quote {
     font-size: 22px;
-  }
-  
-  .button-container {
-    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
     
   }
   
+  .quote-container .author {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .button-container {
+    border-top: 1px solid #ccc;
+    
+  }
+  
+
+  .button-container .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+
+  }
+.features ul{
+  display: flex;
+  margin-left: 10px;
+}
+  .features ul button{
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  
+
+  }
   .new-quote-btn,
   .save-btn,
-  .share-btn {
+  .sound-btn,
+  .sharetwit-btn,
+  .shareWp-btn {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
+   
     font-size: 20px;
   }
   
   .new-quote-btn:hover,
+  .sound-btn:hover,
   .save-btn:hover,
-  .share-btn:hover {
+  .sharetwit-btn:hover,
+  .shareWp-btn:hover {
     background-color: #0056b3;
   }
-  .new-quote-btn{
-    margin-left: 300px;
+
+
+  .features .new-quote-btn{
+    margin-left: 200px;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+
   }

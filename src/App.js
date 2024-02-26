@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import DailyQuote from './components/DailyQuote';
 import Favorites from './components/Favourites';
@@ -10,9 +10,14 @@ function App() {
   const [favoriteQuotes, setFavoriteQuotes] = useState([]);
   const [notification, setNotification] = useState('');
 
+  const initialFetchDoneRef = useRef(false);
+
   useEffect(() => {
-    fetchDailyQuote();
-  }, []);
+    if (!initialFetchDoneRef.current) {
+      fetchDailyQuote();
+      initialFetchDoneRef.current = true;
+    }
+},[]);
 
   const fetchDailyQuote = async () => {
     try {

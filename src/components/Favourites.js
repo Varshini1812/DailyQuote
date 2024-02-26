@@ -20,8 +20,8 @@ function Favorites({ favoriteQuotes, onRemove }) {
       <ul>
         {favoriteQuotes.map((fav) => (
           <li key={fav.quote}>
-            <p className="quote">{fav.quote}</p>
-            <p className="author">- {fav.author}</p>
+            <div className="quote">{fav.quote}</div>
+            <div className="author">- {fav.author}</div>
             <button onClick={() => onRemove(fav)}>Remove</button>
           </li>
         ))}
