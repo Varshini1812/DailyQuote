@@ -1,0 +1,52 @@
+/* Favorites.css */
+
+.Favorites {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .Favorites h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .Favorites ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Favorites li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Favorites li p {
+    margin: 0;
+  }
+  
+  .Favorites li p.quote {
+    font-style: italic;
+    color: #333;
+  }
+  
+  .Favorites li p.author {
+    color: #666;
+  }
+  
+  .Favorites li button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .Favorites li button:hover {
+    background-color: #d32f2f;
+  }
+  

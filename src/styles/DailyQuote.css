@@ -1,0 +1,71 @@
+/* App.css */
+
+.daily-quote-container {
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  
+  }
+  
+  h1.title {
+    font-size: 44px;
+    margin-bottom: 20px;
+    font-family:cursive;
+    
+  }
+  
+  .quote-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    
+  }
+
+  .quotebuttons{
+    display: flex;
+    align-self: start;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  
+  .quote {
+    font-size: 28px;
+    font-style: italic;
+  }
+  
+  .author {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    
+  }
+  
+  .new-quote-btn,
+  .save-btn,
+  .share-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .new-quote-btn:hover,
+  .save-btn:hover,
+  .share-btn:hover {
+    background-color: #0056b3;
+  }
+  .new-quote-btn{
+    margin-left: 300px;
+  }
