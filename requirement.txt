@@ -1,0 +1,29 @@
+# Project Name
+daily_quote_generator
+
+# Description
+A web application that generates daily quotes and allows users to save their favorite quotes and able to share the quotes.
+
+# React Dependencies
+react==18.2.0
+react-dom==18.2.0
+react-router-dom==6.22.1
+web-vitals: ^2.1.4
+
+#Build tool
+react-scripts: 5.0.1
+
+
+# Testing Scripts
+@testing-library/jest-dom==5.17.0
+@testing-library/react==13.4.0
+@testing-library/user-event==13.5.0
+
+#other dependencies
+@fortawesome/fontawesome-svg-core: ^6.5.1
+@fortawesome/free-brands-svg-icons": ^6.5.1
+@fortawesome/free-solid-svg-icons: ^6.5.1
+@fortawesome/react-fontawesome: ^0.2.0
+
+@babel/core: ^7.0.0-0
+eslint: ^7.5.0 || ^8.0.0
