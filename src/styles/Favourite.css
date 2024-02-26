@@ -72,27 +72,27 @@
 
   @media screen and (max-width: 768px) {
     .Favorites {
-      max-width: 90%; /* Adjust container width */
+      max-width: 90%; 
     }
   
     .Favorites h1 {
-      font-size: 24px; /* Reduce font size */
+      font-size: 24px; 
     }
   
     .Favorites li p {
-      font-size: 16px; /* Reduce font size */
+      font-size: 16px; 
     }
   
     .Favorites li .quote {
-      margin-bottom: 10px; /* Adjust margin */
+      margin-bottom: 10px; 
     }
   
     .Favorites li .author {
-      margin-bottom: 10px; /* Adjust margin */
+      margin-bottom: 10px; 
     }
   
     .Favorites li button {
-      padding: 5px 8px; /* Adjust padding */
-      font-size: 14px; /* Reduce font size */
+      padding: 5px 8px; 
+      font-size: 14px; 
     }
   }

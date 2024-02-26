@@ -118,84 +118,82 @@
 
   /* App.css */
 
-/* Existing CSS */
-
 /* Add media query for screens smaller than 768px (typical tablet portrait) */
 @media screen and (max-width: 768px) {
   .daily-quote-container {
-    width: 90%; /* Adjust container width */
-    padding: 20px; /* Adjust padding */
-    margin: 0 auto; /* Center align */
+    width: 90%; 
+    padding: 20px; 
+    margin: 0 auto; 
   }
 
   h1.title {
-    font-size: 32px; /* Reduce font size */
+    font-size: 32px; 
   }
 
   .daily-quote-container .quote-container {
-    height: auto; /* Allow container height to adjust */
-    margin: 20px 0; /* Adjust margin */
+    height: auto; 
+    margin: 20px 0; 
   }
 
   .quotearea .quote {
-    font-size: 18px; /* Reduce font size */
+    font-size: 18px; 
   }
 
   .quote-container .author {
-    font-size: 18px; /* Reduce font size */
+    font-size: 18px; 
   }
 
   .button-container {
-    margin-top: 20px; /* Adjust margin */
+    margin-top: 20px; 
   }
 
   .features .new-quote-btn {
-    margin-left: 0; /* Remove margin */
-    margin-top: 20px; /* Add margin at the top */
-    font-size: 16px; /* Reduce font size */
+    margin-left: 0; 
+    margin-top: 20px; 
+    font-size: 16px; 
   }
 
   .features ul {
-    margin-left: 0; /* Remove margin */
-    margin-top: 20px; /* Add margin at the top */
+    margin-left: 0; 
+    margin-top: 20px; 
   }
 
   .features ul button {
-    margin: 5px; /* Adjust margin */
-    width: 40px; /* Adjust button width */
-    height: 40px; /* Adjust button height */
-    font-size: 16px; /* Reduce font size */
+    margin: 5px; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 16px;
   }
 }
 
 /* Add media query for screens smaller than 480px (typical smartphone) */
 @media screen and (max-width: 480px) {
   h1.title {
-    font-size: 24px; /* Further reduce font size */
+    font-size: 24px; 
   }
 
   .quotearea .quote {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 16px; 
   }
 
   .daily-quote-container .author {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 16px; 
   }
 
   .button-container .features {
-    flex-direction: column; /* Display buttons in a column */
-    align-items: center; /* Center align buttons */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .features .new-quote-btn {
-    margin-top: 20px; /* Add margin at the top */
-    font-size: 14px; /* Further reduce font size */
+    margin-top: 20px; 
+    font-size: 14px; 
   }
 
   .features ul button {
-    margin: 5px; /* Adjust margin */
-    width: 35px; /* Further reduce button width */
-    height: 35px; /* Further reduce button height */
-    font-size: 14px; /* Further reduce font size */
+    margin: 5px; 
+    width: 35px; 
+    height: 35px; 
+    font-size: 14px; 
   }
 }
