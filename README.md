@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+DEMO
+[Check out the live demo](https://dailyquotesapp.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App]
